@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    
+
+<body class="lex-font">
+
+    <header>
+        <nav>
+            <a href="blog.html">Blog</a>
+            <h6><img src="assets/logo.png" alt="">Donate Bangladesh</h6>
+            <div class="balance">
+
+                <p><img src="assets/coin.png" alt=""><span>1000</span>BDT</p>
+
+            </div>
+        </nav>
+        <section class="page">
+            <button type="button" id="donateButton" onclick="toggleSection('donate')">Donate</button>
+            <button type="button" id="historyButton" onclick="toggleSection('history')">History</button>
+        </section>
+    </header>
+    <main>
+        <section class="donate">
+            <div class="donate-card">
+                <img src="assets/noakhali.png" alt="pic1">
+                <div class="content">
+                    <div class="bal">
+                        <img src="assets/coin.png" alt="">
+                        <p> <span id="card-balance-1">0 </span> BDT</p>
+                    </div>
+
+                    <h3 id="card-title-1">Donate for Flood at Noakhali, Bangladesh</h3>
+                    <p>The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your
+                        donation will help provide essential supplies and support to those affected by this disaster.
+                        Every contribution, big or small, makes a difference. Please join us in supporting the relief
+                        efforts and making a positive impact on the lives of those in need.</p>
+                    <form action="" onsubmit="validateDonation(event, 1)">
+                        <input type="number" id="donate-input-1" placeholder="Write Donation Amount">
+                        <br>
+                        <button type="submit">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="donate-card">
+                <img src="assets/feni.png" alt="pic1">
+                <div class="content">
+                    <div class="bal">
+                        <img src="assets/coin.png" alt="">
+                        <p> <span id="card-balance-2">0 </span> BDT</p>
+                    </div>
+
+                    <h3 id="card-title-2">Famine-2024 at Feni, Bangladesh</h3>
+                    <p>The recent floods in Feni have devastated local communities, leading to severe disruption and
+                        loss. Your generous donation will help provide immediate aid, including food, clean water, and
+                        medical supplies, to those affected by this calamity. Together, we can offer crucial support and
+                        help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a
+                        real difference. Please consider donating today to assist those in urgent need.</p>
+                    <form action="" onsubmit="validateDonation(event, 2)">
+                        <input type="number" id="donate-input-2" placeholder="Write Donation Amount">
+                        <br>
+                        <button type="submit">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="donate-card">
+                <img src="assets/quota-protest.png" alt="pic1">
+                <div class="content">
+                    <div class="bal">
+                        <img src="assets/coin.png" alt="">
+                        <p> <span id="card-balance-3">0 </span> BDT</p>
+                    </div>
+
+                    <h3 id="card-title-3">Aid for Injured in the Quota Movement</h3>
+                    <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many
+                        individuals. Your support is crucial in providing medical assistance, rehabilitation, and
+                        necessary supplies to those affected. By contributing, you help ensure that injured individuals
+                        receive the care and support they need during this challenging time. Every donation plays a
+                        vital role in alleviating their suffering and aiding in their recovery. Please consider making a
+                        donation to support these brave individuals in their time of need.</p>
+                    <form action="" onsubmit="validateDonation(event, 3)">
+                        <input type="number" id="donate-input-3" placeholder="Write Donation Amount">
+                        <br>
+                        <button type="submit">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="history" style="display: none;">
+            <div class="history-card">
+                <div id="historyList">
+                    <p>Your donation history will appear here.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="donationModal" class="modal">
+            <div class="modal-content">
+                <h2>Congrats!</h2>
+                <img src="assets/coin.png" alt="Coin">
+                <p>You Have Donated for Humankind</p>
+                <strong>Successfully</strong>
+                <button onclick="closeModal()">Close confirmation</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="utilities.js"></script>
 </body>
+
 </html>
