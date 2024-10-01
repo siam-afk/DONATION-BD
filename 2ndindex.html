@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="lex-font">
+  <header class="w-full">
+    <nav>
+      <a href="index.html">Home</a>
+      <h6><img src="assets/logo.png" alt="">Donate Bangladesh</h6>
+      <div class="balance">
+        <p><img src="assets/coin.png" alt=""><span>1000</span>BDT</p>
+      </div>
+    </nav>
+  </header>
+  <main class="w-[60%] mt-[100px]">
+    <h1 class="flex items-center font-bold text-4xl gap-x-2">Important FAQ <img src="assets/icons8-question.gif" alt="">
+    </h1>
+
+    <div class="collapse collapse-arrow bg-base-200 mt-5 mb-5 shadow-lg shadow-gray-300">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>The Document Object Model (DOM) is a programming interface for web documents that represents the structure of a webpage as a tree of objects. It allows scripts to update content, structure, and styles dynamically.</p>
+      </div>
+    </div>
+
+
+    <div class="collapse collapse-arrow bg-base-200 mt-5 mb-5 shadow-lg shadow-gray-300">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p>To select an element from the DOM, you can use methods like:
+
+          document.getElementById("id")
+          document.querySelector("selector")
+          document.getElementsByClassName("class")
+          document.getElementsByTagName("tag")</p>
+      </div>
+    </div>
+
+
+    <div class="collapse collapse-arrow bg-base-200 mt-5 mb-5 shadow-lg shadow-gray-300">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it
+        useful?</div>
+      <div class="collapse-content">
+        <p>Event delegation is a technique in the DOM where a single event listener is added to a parent element to handle events for its child elements. It's useful because it improves performance by reducing the number of event listeners and allows dynamic child elements to be handled automatically.</p>
+      </div>
+    </div>
+
+
+    <div class="collapse collapse-arrow bg-base-200 mt-5 mb-5 shadow-lg shadow-gray-300">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
+        DOM?</div>
+      <div class="collapse-content">
+        <p>You can manipulate an element's attributes using methods like setAttribute() and getAttribute(), and modify styles using element.style.property. For example:
+
+          element.setAttribute("class", "newClass") to change an attribute.
+          element.style.color = "red" to update the style.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="utilities.js"></script>
+</body>
+
+</html>
